@@ -10,28 +10,27 @@ The goal is to evaluate user activity, engagement levels, and behavioral trends 
 - **Source:** https://www.kaggle.com/code/suprithahalesh/telecom-customer-churn/input 
 - **Format:** CSV  
 - **Columns:**
-    customerID        VARCHAR(20)    NOT NULL,
-    gender            VARCHAR(10),
-    SeniorCitizen     TINYINT(1),          -- 0 = No, 1 = Yes
-    Partner           VARCHAR(5),          -- 'Yes' / 'No'
-    Dependents        VARCHAR(5),          -- 'Yes' / 'No'
-    tenure            INT,                 -- months as a customer (0–72)
-    PhoneService      VARCHAR(5),          -- 'Yes' / 'No'
-    MultipleLines     VARCHAR(20),         -- 'Yes' / 'No' / 'No phone service'
-    InternetService   VARCHAR(20),         -- 'DSL' / 'Fiber optic' / 'No'
-    OnlineSecurity    VARCHAR(25),         -- 'Yes' / 'No' / 'No internet service'
-    OnlineBackup      VARCHAR(25),
-    DeviceProtection  VARCHAR(25),
-    TechSupport       VARCHAR(25),
-    StreamingTV       VARCHAR(25),
-    StreamingMovies   VARCHAR(25),
-    Contract          VARCHAR(20),         -- 'Month-to-month' / 'One year' / 'Two year'
-    PaperlessBilling  VARCHAR(5),          -- 'Yes' / 'No'
-    PaymentMethod     VARCHAR(40),         -- 4 categories
-    MonthlyCharges    DECIMAL(8,2),        -- range: $18.25 – $118.75
-    TotalCharges      VARCHAR(20),         -- stored as string in CSV; 11 rows are blank
+    customerID        VARCHAR(20)
+    gender            VARCHAR(10)
+    SeniorCitizen     TINYINT(1)          
+    Partner           VARCHAR(5)          
+    Dependents        VARCHAR(5)         
+    tenure            INT                
+    PhoneService      VARCHAR(5)          
+    MultipleLines     VARCHAR(20)         
+    InternetService   VARCHAR(20)       
+    OnlineSecurity    VARCHAR(25)        
+    OnlineBackup      VARCHAR(25)
+    DeviceProtection  VARCHAR(25)
+    TechSupport       VARCHAR(25)
+    StreamingTV       VARCHAR(25)
+    StreamingMovies   VARCHAR(25)
+    Contract          VARCHAR(20)         
+    PaperlessBilling  VARCHAR(5)          
+    PaymentMethod     VARCHAR(40)         
+    MonthlyCharges    DECIMAL(8,2)
+    TotalCharges      VARCHAR(20)      
     Churn             VARCHAR(5)
-
 
 ##  Project Phases
 ### Phase 1: Database & Table Setup
